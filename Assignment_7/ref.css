@@ -1,0 +1,137 @@
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Prompt";
+   cursor: none;
+}
+h2 {
+   color: #235edc;
+}
+.sidebar {
+   float: right;
+   width: 300px;
+   background-color: #a0bbe9;
+   border-radius: 15px;
+   position: sticky;
+   top: 50px;
+   margin-right: 120px;
+   animation: fade-up .75s ease-in;
+   border: 2px solid #102341;
+}
+.sidebar p {
+   margin-bottom: 0;
+   font-size: larger;
+   font-weight: 500;
+   color: #fff;
+   text-align: center;
+}
+.sidebar ul {
+   padding: 0 15px 15px;
+   margin: 0;
+}
+.sidebar ul li {
+   list-style-type: none;
+   margin: 10px 0;
+}
+
+.sidebar a {
+   text-decoration: none;
+   color: #fff;
+}
+.sidebar img {
+   vertical-align: middle;
+   position: relative;
+   right: 5px;
+}
+
+.dropdown {
+   display: none;
+   /* margin: 5px 0; */
+}
+.sidebar ul li:hover .dropdown {
+   color: #fff;
+   border-radius: 12px;
+   display: block;
+}
+.dropdown li:hover {
+   color: #235edc;
+   font-weight: 600;
+}
+footer {
+   width: 860px;
+   height: 300px;
+   position: relative;
+   /* background-color: #a0bbe9; */
+   margin-top: 100px;
+   border-radius: 15px;
+   padding: 40px;
+   margin-left: 120px;
+   margin-bottom: 100px;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   animation: fade-up 0.75s ease-in;
+}
+footer h2 {
+   margin-top: 0;
+}
+.back a {
+   margin-right: 30px;
+   /* margin-top: 20px; */
+   padding: 10px;
+   position: absolute;
+   right: 0;
+   border-radius: 12px;
+   color: #235edc;
+   text-decoration: none;
+   font-weight: 600;
+}
+.back a:hover {
+   background-color: #235edc;
+   color: #fff;
+}
+.cursor-dot {
+   width: 5px;
+   height: 5px;
+   background-color: #235edc;
+}
+.cursor-dot img {
+   width: 50px;
+}
+.cursor-outline {
+   width: 30px;
+   height: 30px;
+   border: 2px solid #235edc;
+}
+
+.cursor-dot, .cursor-outline {
+   position: fixed;
+   top: 0;
+   left: 0;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   z-index: 1;
+   pointer-events: none;
+}
+
+@keyframes fade-up {
+   0% {
+     opacity: 0;
+     transform: translateY(30px) scale(0);
+   }
+
+   100% {
+     opacity: 1;
+     transform: translateY(0px) scale(1);
+   }
+}
+
+@keyframes pop-up {
+   from {
+      opacity: 0;
+      scale: 0;
+   }
+   to {
+      opacity: 1;
+      scale: 1;
+   }
+}

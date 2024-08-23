@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   margin: 0; /* กำหนด margin ของทุกองค์ประกอบเป็น 0 */
+   padding: 0; /* กำหนด padding ของทุกองค์ประกอบเป็น 0 */
+   font-family: "Noto Sans Thai Looped"; /* กำหนดฟอนต์ที่ใช้ในทุกองค์ประกอบเป็น "Noto Sans Thai Looped" */
+   scroll-behavior: smooth; /* กำหนดการเลื่อนหน้าเว็บให้เรียบ */
+}
+
+#header {
+   background-color: #000; /* กำหนดสีพื้นหลังของ header เป็นสีดำ */
+   color: #fff; /* กำหนดสีข้อความใน header เป็นสีขาว */
+}
+
+#hidden_figures {
+   background-color: #000; /* กำหนดสีพื้นหลังของ #hidden_figures เป็นสีดำ */
+   color: #fff; /* กำหนดสีข้อความใน #hidden_figures เป็นสีขาว */
+}
+
+#Iso2 , #Hdf {
+   border-radius: 15px; /* กำหนดมุมของ #Iso2 และ #Hdf ให้โค้ง 15px */
+   transition: 0.75s ease-in-out;/* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.75 วินาที */
+}
+
+#Iso2:hover {
+   border: 2px solid white; /* กำหนดขอบเป็นสีขาวหนา 2px เมื่อโฮเวอร์ */
+   background-color: #fff; /* กำหนดสีพื้นหลังเป็นสีขาวเมื่อโฮเวอร์ */
+   color: #000; /* กำหนดสีข้อความเป็นสีดำเมื่อโฮเวอร์ */
+   transform: translateY(-20px); /* เลื่อนขึ้น 20px เมื่อโฮเวอร์ */
+   transform: scale(1.2); /* ขยายขนาด 1.2 เท่าเมื่อโฮเวอร์ */
+}
+
+#Hdf:hover {
+   border: 2px solid white; /* กำหนดขอบเป็นสีขาวหนา 2px เมื่อโฮเวอร์ */
+   background-color: #fff; /* กำหนดสีพื้นหลังเป็นสีขาวเมื่อโฮเวอร์ */
+   color: #000; /* กำหนดสีข้อความเป็นสีดำเมื่อโฮเวอร์ */
+   transform: translateY(-20px); /* เลื่อนขึ้น 20px เมื่อโฮเวอร์ */
+   transform: scale(1.2); /* ขยายขนาด 1.2 เท่าเมื่อโฮเวอร์ */
+}
+
+#header h1 {
+   padding-top: 100px; /* กำหนด padding ด้านบนของ h1 ใน header เป็น 100px */
+   font-size: 50px; /* กำหนดขนาดตัวอักษรของ h1 ใน header เป็น 50px */
+   text-align: center; /* กำหนดให้ข้อความอยู่กึ่งกลาง */
+}
+
+#header p {
+   text-align: center; /* กำหนดให้ข้อความอยู่กึ่งกลาง */
+}
+
+.card {
+   display: flex; /* กำหนดการแสดงผลแบบ flexbox */
+   justify-content: center; /* จัดให้องค์ประกอบภายในอยู่กึ่งกลาง */
+   gap: 100px; /* กำหนดช่องว่างระหว่างองค์ประกอบภายในเป็น 100px */
+   padding-top: 100px; /* กำหนด padding ด้านบนเป็น 100px */
+   padding-bottom: 100px; /* กำหนด padding ด้านล่างเป็น 100px */
+}
+
+.content {
+   padding-bottom: 20px; /* กำหนด padding ด้านล่างเป็น 20px */
+   text-align: center; /* กำหนดให้ข้อความอยู่กึ่งกลาง */
+}
+
+a img {
+   width: 200px; /* กำหนดความกว้างของรูปภาพเป็น 200px */
+   height: 320px; /* กำหนดความสูงของรูปภาพเป็น 320px */
+   border-radius: 12px; /* กำหนดมุมของรูปภาพให้โค้ง 12px */
+}
+
+.head_img {
+   width: auto; /* กำหนดความกว้างของรูปภาพเป็นอัตโนมัติ */
+   height: 400px; /* กำหนดความสูงของรูปภาพเป็น 400px */
+   background-color: #fff; /* กำหนดสีพื้นหลังเป็นสีขาว */
+   display: flex; /* กำหนดการแสดงผลแบบ flexbox */
+   justify-content: center; /* จัดให้องค์ประกอบภายในอยู่กึ่งกลาง */
+}
+
+.head_img img {
+   animation: fade_in linear; /* กำหนด animation "fade_in" แบบ linear */
+   animation-timeline: view(); /* ใช้ animation timeline view() */
+   animation-range-end: 700px; /* กำหนด animation ให้ทำงานจนถึง 700px */
+}
+
+#inside_out_2 {
+   text-align: center; /* กำหนดให้ข้อความอยู่กึ่งกลาง */
+   background: #000; /* กำหนดสีพื้นหลังเป็นสีดำ */
+   color: #fff; /* กำหนดสีข้อความเป็นสีขาว */
+}
+
+.container {
+   animation: fade_in linear; /* กำหนด animation "fade_in" แบบ linear */
+   animation-timeline: view(); /* ใช้ animation timeline view() */
+   animation-range-end: 700px; /* กำหนด animation ให้ทำงานจนถึง 700px */
+}
+
+.container h3{
+   font-size: 22px; /* กำหนดขนาดตัวอักษรของ h3 เป็น 22px */
+}
+
+.container h2 {
+   margin-bottom: 40px; /* กำหนด margin ด้านล่างของ h2 เป็น 40px */
+   font-size: 2rem; /* กำหนดขนาดตัวอักษรของ h2 เป็น 2rem */
+}
+
+.character {
+   display: flex; /* กำหนดการแสดงผลแบบ flexbox */
+   justify-content: center; /* จัดให้องค์ประกอบภายในอยู่กึ่งกลาง */
+   border-radius: 25px; /* กำหนดมุมขององค์ประกอบให้โค้ง 25px */
+   padding-bottom: 100px; /* กำหนด padding ด้านล่างเป็น 100px */
+}
+
+.character h3 {
+   padding-top: 15px; /* กำหนด padding ด้านบนเป็น 15px */
+}
+
+#anxiety, #envy, #ennui, #embarrassment span{
+   padding-bottom: 15px; /* กำหนด padding ด้านล่างเป็น 15px */
+}
+
+#anxiety img {
+   width: 300px; /* กำหนดความกว้างของรูปภาพเป็น 300px */
+   height: 500px; /* กำหนดความสูงของรูปภาพเป็น 500px */
+   background-color: #dd7427; /* กำหนดสีพื้นหลังของรูปภาพเป็นสี #dd7427 */
+}
+
+#anxiety:hover {
+   color: #fff; /* กำหนดสีข้อความเป็นสีขาวเมื่อโฮเวอร์ */
+   background: #dd7427; /* กำหนดสีพื้นหลังเป็น #dd7427 เมื่อโฮเวอร์ */
+   transition: 0.4s ease-in; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.4 วินาที */
+   transform: translateY(-20px); /* เลื่อนขึ้น 20px เมื่อโฮเวอร์ */
+}
+
+#envy img {
+   width: 300px; /* กำหนดความกว้างของรูปภาพเป็น 300px */
+   height: 500px; /* กำหนดความสูงของรูปภาพเป็น 500px */
+   background-color: #70cdc5; /* กำหนดสีพื้นหลังของรูปภาพเป็นสี #70cdc5 */
+   object-fit: contain; /* กำหนดให้รูปภาพแสดงเต็มองค์ประกอบโดยไม่บิดเบือน */
+}
+
+#envy:hover {
+   color: #fff; /* กำหนดสีข้อความเป็นสีขาวเมื่อโฮเวอร์ */
+   background: #70cdc5; /* กำหนดสีพื้นหลังเป็น #70cdc5 เมื่อโฮเวอร์ */
+   transition: 0.4s ease-in; /*กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.4 วินาที*/
+   transform: translateY(-20px); /* เลื่อนขึ้น 20px เมื่อโฮเวอร์ */
+}
+
+#ennui img {
+   width: 300px; /* กำหนดความกว้างของรูปภาพเป็น 300px */
+   height: 500px; /* กำหนดความสูงของรูปภาพเป็น 500px */
+   background-color: #172075; /* กำหนดสีพื้นหลังของรูปภาพเป็นสี #172075 */
+   object-fit: contain; /* กำหนดให้รูปภาพแสดงเต็มองค์ประกอบโดยไม่บิดเบือน */
+}
+
+#ennui:hover {
+   color: #fff; /* กำหนดสีข้อความเป็นสีขาวเมื่อโฮเวอร์ */
+   background: #172075; /* กำหนดสีพื้นหลังเป็น #172075 เมื่อโฮเวอร์ */
+   transition: 0.4s ease-in; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.4 วินาที */
+   transform: translateY(-20px); /* เลื่อนขึ้น 20px เมื่อโฮเวอร์ */
+}
+
+#embarrassment img {
+   width: 300px; /* กำหนดความกว้างของรูปภาพเป็น 300px */
+   height: 500px; /* กำหนดความสูงของรูปภาพเป็น 500px */
+   background-color: #ee86ab; /* กำหนดสีพื้นหลังของรูปภาพเป็นสี #ee86ab */
+   object-fit: contain; /* กำหนดให้รูปภาพแสดงเต็มองค์ประกอบโดยไม่บิดเบือน */
+}
+
+#embarrassment:hover {
+   color: #fff; /* กำหนดสีข้อความเป็นสีขาวเมื่อโฮเวอร์ */
+   background: #ee86ab; /* กำหนดสีพื้นหลังเป็น #ee86ab เมื่อโฮเวอร์ */
+   transition: 0.4s ease-in; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.4 วินาที */
+   transform: translateY(-20px); /* เลื่อนขึ้น 20px เมื่อโฮเวอร์ */
+}
+
+.description {
+   display: flex; /* กำหนดการแสดงผลแบบ flexbox */
+   justify-content: center; /* จัดให้องค์ประกอบภายในอยู่กึ่งกลาง */
+   gap: 50px; /* กำหนดช่องว่างระหว่างองค์ประกอบภายในเป็น 50px */
+   padding-top: 100px; /* กำหนด padding ด้านบนเป็น 100px */
+   padding-bottom: 100px; /* กำหนด padding ด้านล่างเป็น 100px */
+   animation: fade_in linear; /* กำหนด animation "fade_in" แบบ linear */
+   animation-timeline: view(); /* ใช้ animation timeline view() */
+   animation-range-end: 700px; /* กำหนด animation ให้ทำงานจนถึง 700px */
+}
+
+.warper {
+   width: 500px; /* กำหนดความกว้างขององค์ประกอบเป็น 500px */
+   background-color: #fff; /* กำหนดสีพื้นหลังเป็นสีขาว */
+   color: #000; /* กำหนดสีข้อความเป็นสีดำ */
+   padding: 30px; /* กำหนด padding ขององค์ประกอบเป็น 30px */
+   border-radius: 15px; /* กำหนดมุมขององค์ประกอบให้โค้ง 15px */
+}
+
+.warper p {
+   text-align: left; /* กำหนดให้ข้อความอยู่ทางซ้าย */
+   text-indent: 20px; /* กำหนดการย่อหน้า 20px */
+}
+
+.warper h1 {
+   margin-bottom: 15px; /* กำหนด margin ด้านล่างของ h1 เป็น 15px */
+   font-size: 50px; /* กำหนดขนาดตัวอักษรของ h1 เป็น 50px */
+   text-align: center; /* กำหนดให้ข้อความอยู่กึ่งกลาง */
+}
+
+.warper h1::first-letter {
+   font-size: 70px; /* กำหนดขนาดตัวอักษรของตัวอักษรแรกใน h1 เป็น 70px */
+   font-family: Helvetica; /* กำหนดฟอนต์ของตัวอักษรแรกใน h1 เป็น Helvetica */
+}
+
+.warper ul li {
+   text-align: left; /* กำหนดให้ข้อความอยู่ทางซ้าย */
+   list-style: none; /* กำหนดให้ไม่มีสัญลักษณ์ bullet ในรายการ */
+}
+
+.warper2 video {
+   width: 600px; /* กำหนดความกว้างของวิดีโอเป็น 600px */
+   border-radius: 15px; /* กำหนดมุมของวิดีโอให้โค้ง 15px */
+   margin-bottom: 25px; /* กำหนด margin ด้านล่างเป็น 25px */
+}
+
+.warper2 h2 {
+   padding-bottom: 25px; /* กำหนด padding ด้านล่างของ h2 เป็น 25px */
+   text-align: left; /* กำหนดให้ข้อความอยู่ทางซ้าย */
+}
+
+.actor {
+   padding: 25px; /* กำหนด padding ขององค์ประกอบเป็น 25px */
+   border-radius: 15px; /* กำหนดมุมขององค์ประกอบให้โค้ง 15px */
+   background: #fff; /* กำหนดสีพื้นหลังเป็นสีขาว */
+   color: #000; /* กำหนดสีข้อความเป็นสีดำ */
+}
+
+.box {
+   display: flex; /* กำหนดการแสดงผลแบบ flexbox */
+   justify-content: space-between; /* จัดให้องค์ประกอบภายในมีช่องว่างระหว่างกัน */
+}
+
+.cast {
+   text-align: center; /* กำหนดให้ข้อความอยู่กึ่งกลาง */
+}
+
+.cast h3 {
+   font-size: 15px; /* กำหนดขนาดตัวอักษรของ h3 เป็น 15px */
+   padding-bottom: 10px ; /* กำหนด padding ด้านล่างเป็น 10px */
+   padding-top: 10px; /* กำหนด padding ด้านบนเป็น 10px */
+}
+
+.cast img {
+   width: 100px; /* กำหนดความกว้างของรูปภาพเป็น 100px */
+   height: 100px; /* กำหนดความสูงของรูปภาพเป็น 100px */
+   border-radius: 50%; /* กำหนดให้รูปภาพมีมุมโค้ง 50% เพื่อให้เป็นวงกลม */
+   object-fit: cover; /* กำหนดให้รูปภาพแสดงเต็มองค์ประกอบโดยไม่บิดเบือน */
+}
+
+#maya img {
+   object-position: 0% -2%; /* กำหนดตำแหน่งของรูปภาพให้อยู่ที่ 0% -2% */
+}
+
+#paul img {
+   object-position: 34% 0%; /* กำหนดตำแหน่งของรูปภาพให้อยู่ที่ 34% 0% */
+}
+
+.poster {
+   display: flex; /* กำหนดการแสดงผลแบบ flexbox */
+   justify-content: center; /* จัดให้องค์ประกอบภายในอยู่กึ่งกลาง */
+   gap: 50px; /* กำหนดช่องว่างระหว่างองค์ประกอบภายในเป็น 50px */
+   padding-bottom: 100px; /* กำหนด padding ด้านล่างเป็น 100px */
+   border-radius: 15px; /* กำหนดมุมขององค์ประกอบให้โค้ง 15px */
+   animation: fade_in linear; /* กำหนด animation "fade_in" แบบ linear */
+   animation-timeline: view(); /* ใช้ animation timeline view() */
+   animation-range-end: 400px; /* กำหนด animation ให้ทำงานจนถึง 400px */
+}
+
+.poster img {
+   width: 500px; /* กำหนดความกว้างของรูปภาพเป็น 500px */
+   object-fit: contain; /* กำหนดให้รูปภาพแสดงเต็มองค์ประกอบโดยไม่บิดเบือน */
+   border-radius: 15px; /* กำหนดมุมของรูปภาพให้โค้ง 15px */
+   border: 2px solid white; /* กำหนดขอบของรูปภาพเป็นสีขาวหนา 2px */
+}
+
+.poster img:hover {
+   background-color: #fff; /* กำหนดสีพื้นหลังเป็นสีขาวเมื่อโฮเวอร์ */
+   transition: .7s ease-in; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.7 วินาที */
+   transform: translateY(-10px); /* เลื่อนขึ้น 10px เมื่อโฮเวอร์ */
+}
+
+.true_story {
+   text-align: left; /* กำหนดให้ข้อความอยู่ทางซ้าย */
+}
+
+#btn_readMore {
+   display: inline-block; /* กำหนดให้แสดงผลเป็นแบบ inline-block */
+   margin-top: 25px; /* กำหนด margin ด้านบนเป็น 25px */
+   font-weight: bold; /* กำหนดน้ำหนักตัวอักษรให้เป็นแบบ bold */
+   text-decoration: none; /* กำหนดไม่ให้มีการขีดเส้นใต้ที่ข้อความ */
+   font-size: 20px; /* กำหนดขนาดตัวอักษรเป็น 20px */
+   color: #000; /* กำหนดสีข้อความเป็นสีดำ */
+   background-color: #fff; /* ก
+
+ำหนดสีพื้นหลังเป็นสีขาว */
+   padding: 10px; /* กำหนด padding ขององค์ประกอบเป็น 10px */
+   border-radius: 15px; /* กำหนดมุมขององค์ประกอบให้โค้ง 15px */
+}
+
+#btn_readMore:hover {
+   transform: translateY(-10px); /* เลื่อนขึ้น 10px เมื่อโฮเวอร์ */
+   transition: 0.5s ease-out; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.5 วินาที */
+   background-color: #70cdc5; /* กำหนดสีพื้นหลังเป็น #70cdc5 เมื่อโฮเวอร์ */
+}
+
+.back-to-top {
+	position: fixed; /* กำหนดตำแหน่งคงที่ */
+	bottom: 2rem; /* กำหนดตำแหน่งด้านล่างเป็น 2rem */
+	right: 2rem; /* กำหนดตำแหน่งด้านขวาเป็น 2rem */
+	display: inline-flex; /* กำหนดให้แสดงผลเป็นแบบ inline-flex */
+	align-items: center; /* จัดให้องค์ประกอบภายในอยู่ตรงกลางในแนวตั้ง */
+	justify-content: center; /* จัดให้องค์ประกอบภายในอยู่กึ่งกลางในแนวนอน */
+	background-color: #ffffff; /* กำหนดสีพื้นหลังเป็นสีขาว */
+	border-radius: 15px; /* กำหนดมุมขององค์ประกอบให้โค้ง 15px */
+	padding: 10px; /* กำหนด padding ขององค์ประกอบเป็น 10px */
+	text-decoration: none; /* กำหนดไม่ให้มีการขีดเส้นใต้ที่ข้อความ */
+	transition: 0.2s ease-out; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.2 วินาที */
+}
+
+.back-to-top span {
+	color: #000; /* กำหนดสีข้อความเป็นสีดำ */
+	font-size: 3rem; /* กำหนดขนาดตัวอักษรเป็น 3rem */
+	transition: 0.2s ease-out; /* กำหนดการเปลี่ยนแปลงให้เกิดขึ้นภายใน 0.2 วินาที */
+}
+
+.back-to-top:hover {
+	background-color: #bcbcbc; /* กำหนดสีพื้นหลังเป็น #bcbcbc เมื่อโฮเวอร์ */
+}
+
+.back-to-top:hover span {
+	transform: translateY(-4px); /* เลื่อนขึ้น 4px เมื่อโฮเวอร์ */
+}
+
+@keyframes fade_in {
+   from {scale: .6; opacity: 0;} /* เริ่มต้นจากขนาด 0.6 และความทึบเป็น 0 */
+   to {scale: 1; opacity: 1;} /* สิ้นสุดที่ขนาด 1 และความทึบเป็น 1 */
+}

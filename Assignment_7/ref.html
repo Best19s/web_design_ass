@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Reference</title>
+   <link rel="stylesheet" href="ref.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Logo-title.png" />
+</head>
+<body>
+   <div class="sidebar">
+      <p>Menu</p>
+      <ul>
+        <li><img src="img/icon/Home.svg" alt /><a href="index.html">Home</a></li>
+        <li><img src="img/icon/User.svg" alt /><a href>About</a></li>
+        <li>
+          <img src="img/icon/Pin.svg" alt /><a href
+            >Content <img src="img/Caret-down.svg" alt
+          /></a>
+          <ul class="dropdown">
+            <li>1. การออกแบบเว็บไซต์ที่ดี</li>
+            <li>2. กระบวนการในการพัฒนาเว็บไซต์</li>
+            <li>3. เทคนิคการออกแบบเว็บเพจให้แสดงผลได้เร็ว</li>
+            <li>4. รายการอ้างอิง</li>
+          </ul>
+        </li>
+        <li><img src="img/icon/Telegram.svg" alt /><a href>Reference</a></li>
+      </ul>
+    </div>
+    <footer>
+      <div class="back"><a href="index.html">Back</a></div>
+      <h2>รายการอ้างอิง</h2>
+      <ul>
+        <li>
+          Kentie, Peter. Web design tools and techniques . Berkeley,
+          Ca.:Peachpit, c2002.
+        </li>
+        <li>
+          Geest, Thea van der . Web site design is communication
+          design.Amsterdam: John Benjamins, 2001.
+        </li>
+        <li>
+          Sklar, Joel. Principles of Web design. 2 nd ed. Boston,
+          Mass.:Thomson/Course Technology, 2003.
+        </li>
+        <li>
+          ครัก, สตีฟ. คลิก...ไม่ต้องคิด!. กรุงเทพ: ซีเอ็ดยูเคชั่น,
+          2545.จุฬาลงกรณ์มหาวิทยาลัย. คณะอักษรศาสตร์.
+        </li>
+        <li>
+          คู่มือคุณภาพคณะอักษรศาสตร์จุฬาลงกรณ์มหาวิทยาลัย ฉบับที่ 1
+          ปรับปรุงครั้งที่ 3 (1 ธันวาคม2547).[ม.ป.ท.], 2547. (อัดสำเนา)
+        </li>
+        <li>
+          ดวงพร เกี๋ยงคำ และวงศ์ประชา
+          จันทร์สมวงศ์.คู่มือสร้างเว็บไซต์ด้วยตนเอง.กรุงเทพ : โปรวิชั่น, 2546.
+        </li>
+        <li>
+          ฐิตารัตน์ รัชตะวรรณ. ออกแบบและสร้างเว็บสวยด้วยตนเอง.
+          นนทบุรี:ไอดีซี,2547.
+        </li>
+        <li>ธวัชชัย ศรีสุเทพ. คัมภีร์เว็บดีไซน์. กรุงเทพ: โปรวิชั่น,2544.</li>
+      </ul>
+    </footer>
+    <div class="loader"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="scroll"></div>
+
+    <script>
+      const cursorDot = document.querySelector(".cursor-dot");
+      const cursorOutline = document.querySelector(".cursor-outline");
+      window.addEventListener("mousemove", function (e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.style.left = `${posX}px`;
+        cursorOutline.style.top = `${posY}px`;
+
+        cursorOutline.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: "forwards" }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        document.querySelector(".loader").classList.add("loader--hidden");
+
+        document
+          .querySelector(".loader")
+          .addEventListener("transitionend", () => {
+            document.body.removeChild(document.querySelector(".loader"));
+          });
+      });
+    </script>
+</body>
+</html>

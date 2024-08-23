@@ -1,0 +1,337 @@
+:root {
+  --Old_Brick: #902124;
+  --Jordy_Blue: #8eb9ff;
+  --Cab_Sav: #4d0011;
+  --Gondola: #221416;
+}
+@font-face {
+  font-family: "BDOGrotesk";
+  src: url(font/Bdo-grotesk/BDOGrotesk-VF.woff2);
+}
+@font-face {
+  font-family: "Nyght-serif-regular";
+  src: url(font/Nyght-serif/OTF/NyghtSerif-Regular.otf);
+}
+@font-face {
+  font-family: "Nyght-serif";
+  src: url(font/Nyght-serif/OTF/NyghtSerif-Dark.otf);
+}
+/* เพิ่ม font */
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "BDOGrotesk";
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+/* ตั้งค่าพื้นฐานให้กับTagสำคัญ */
+h2 {
+  font-family: "Nyght-serif-regular";
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-top: 0;
+  color: var(--Old_Brick);
+}
+li {
+  padding: 4px 0;
+}
+li::marker {
+  color: var(--Gondola);
+}
+p {
+  text-indent: 15px;
+}
+b {
+  color: var(--Old_Brick);
+}
+mark {
+  background-color: var(--Old_Brick);
+  padding: 0 2px;
+  color: #fff;
+  border-radius: 5px;
+}
+/* เข้าถึง tag nav */
+nav {
+  background-color: var(--Jordy_Blue);
+  padding-top: 50px;
+  padding-bottom: 120px;
+  /* ตั้งค่าพื้นหลัง กำหนด padding บนล่าง */
+}
+nav h2 {
+  margin: 0;
+  color: var(--Gondola);
+  animation: fade-up 0.7s ease-in;
+  /* กำหนดให้ margin เป็น 0 และเปลี่ยนสีข้อความแล้วใช้animation*/
+}
+nav img {
+  width: 40px;
+  vertical-align: middle;
+  padding-left: 5rem;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  /* ตังค่าขนาดรูป ทำให้รูปอยู่กึ่งกลางข้อความ ตั้งค่า padding ซัายขวาล่าง */
+}
+
+/* เข้าถึง tag header */
+header {
+  background-color: var(--Jordy_Blue);
+  height: 100vh;
+  padding-left: 60px;
+  /* เปลี่ยนสีพื้นหลัง ตั้งค่าความยาว และ ตั้งค่า padding ซ้าย */
+}
+header img {
+  position: absolute;
+  width: 350px;
+  right: 50px;
+  top: 200px;
+  animation: fade-up 0.7s ease-in;
+  /* ตั้งค่ารูปกำหนดให้สามารถตั้งค่าพื้นที่ได้ และใช้ animation */
+}
+header h1 {
+  font-family: "Nyght-serif";
+  color: var(--Old_Brick);
+  font-size: 7rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 2px var(--Cab_Sav);
+  word-spacing: 5px;
+  animation: fade-up 0.6s;
+  /* เรียกใช้ฟอนต์ เปลี่ยนสีข้อความ เพิ่มขนาดข้อความ ตั้งค่า margin เพิ่มเส้นขอบตัวอักษร ตั้งค่าระยะห่างของคำ เรียกใช้ animation */
+}
+
+header p {
+  font-family: "BDOGrotesk";
+  width: 800px;
+  margin-bottom: 3em;
+  animation: fade-up 0.7s;
+  /* เรียกใช้ฟอนต์ ตั้งค่าความยาว ตั้งค่า margin ล่าง และเรียกใช้ animation */
+}
+
+header a {
+  color: var(--Gondola);
+  text-decoration: none;
+  border: 2px solid var(--Cab_Sav);
+  border-radius: 1rem;
+  padding: 0.5em;
+  transition: 0.5s ease-in;
+  display: inline-block;
+  animation: fade-up 0.7s ease-in;
+  font-weight: bold;
+  /* กำหนดสีข้อความ ลบเส้นใต้ออก เพิ่มเส้นขอบ และเพิ่มความมนของเส้นขอบ เพิ่ม padding ตั้งค่า transition ตั้งค่า display เรียกใช้ animation ตั้งค่าน้ำหนักตัวอักษร */
+}
+
+header a:hover {
+  background-color: var(--Old_Brick);
+  transform: scale(1.2);
+  box-shadow: 0px 5px var(--Cab_Sav);
+  color: #fff;
+  /* เมื่อมีการ hover เปลี่ยนสี และทำให้ใหญ่ขึ้น เพิ่มเงา และเปลี่ยนสีข้อความ */
+}
+
+/* เข้าถึง tag article */
+article {
+  background-color: var(--Old_Brick);
+  padding: 100px 350px;
+  /* กำหนดพื้นหลัง และ เพิ่ม padding*/
+}
+.container {
+  color: var(--Gondola);
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  border: 4px solid var(--Cab_Sav);
+  margin-bottom: 100px;
+  animation: fade-up ease-in-out;
+  animation-timeline: view();
+  animation-range-end: 550px;
+  /* เปลี่ยนสีข้อความและพื้นหลัง เพิ่ม padding และ margin ล่าง ตั้งค่าเส้นขอบและความมนของเส้นขอบ และเรียกใช้ animation */
+}
+
+.content2 ul {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid var(--Cab_Sav);
+  /* เปลี่ยนพื้นหลัง เพิ่ม padding และ ตั้งค่าเส้นขอบและความมนของเส้นขอบ  */
+}
+.content2 li {
+  list-style: none;
+  /* เอา bullet list ออก */
+}
+.box1 {
+  margin-bottom: 50px;
+  /* เพิ่ม margin ล่าง */
+}
+/* ตั้งค่า ID */
+#xx-small {
+  font-size: xx-small;
+}
+#x-small {
+  font-size: x-small;
+}
+#small {
+  font-size: small;
+}
+#medium {
+  font-size: medium;
+}
+#large {
+  font-size: large;
+}
+#x-large {
+  font-size: x-large;
+}
+#xx-large {
+  font-size: xx-large;
+}
+#smaller {
+  font-size: smaller;
+}
+#larger {
+  font-size: larger;
+}
+
+/* ตั้งค่ารูปภาพ */
+.code-capture img {
+  width: 500px;
+  border-radius: 15px;
+  margin: 15px 0;
+  border: 2px solid var(--Cab_Sav);
+  display: inline-block;
+  transition: 0.4s ease-in-out;
+  /* เพิ่มความยาว ตั้งค่าเส้นขอบและความมนของเส้นขอบ เพิ่ม margin บนล่าง ตั้งค่า display เพิ่ม transition */
+}
+.code-capture img:hover {
+  transform: scale(1.1);
+  /* ทำให้ขยายใหญ่ */
+}
+.content5 li {
+  padding: 10px 0;
+  /* เพิ่ม padding */
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+  /* ตั้งค่าน้ำหนัก และทำให้คลิกได้ */
+}
+#upper-text li {
+  text-transform: uppercase;
+  /* ตั้งค่าให้เป็นตัวอักษรพิมพ์ใหญ่ */
+}
+/* เข้าถึง tag footer */
+footer {
+  background-color: var(--Cab_Sav);
+  padding: 60px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  /* ตั้งค่าพิ้นหลังและสีข้อความ เพิ่ม padding ตั้งค่า position ทำให้อยู่ตรงกลาง*/
+}
+
+footer p {
+  text-indent: 0;
+  /* ตั้งค่าย่อหน้า */
+}
+
+footer h2 {
+  color: #fff;
+  /* ตั้งค่าสีตัวอักษร */
+}
+
+.info-footer {
+  padding-right: 50px;
+  /* เพิ่ม padding ขวา */
+}
+.menu-footer {
+  padding-left: 40px;
+  /* เพิ่ม padding ซ้าย */
+}
+.menu-footer ul {
+  padding: 0;
+  /* เอา padding ออก */
+}
+.menu-footer li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  /* เอา bullet list ออก และทำให้คลิกได้ */
+}
+.menu-footer li:hover {
+  padding-left: 5px;
+  font-weight: bold;
+  /* เพิ่ม padding ซัาย และเพิ่มน้ำหนักตัวอักษร */
+}
+
+.icon-box img {
+  width: 50px;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  /* ตั้งค่าความยาว เพิ่ม padding ทำให้คลิกได้ เพิ่ม transition */
+}
+.icon-box img:hover {
+  transform: translateY(-10px);
+  /* เมื่อมีการ hover ขยับขึ้นแกน Y  */
+}
+.scroll-up a {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  color: #ffff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0.5em;
+  transition: 0.5s ease-in;
+  display: inline-block;
+  /* ตั้งค่า position ตั้งค่าตำแหน่ง ขวา ล่าง เอาเส้นใต้ออก เพิ่มเส้นขอบ เปลี่ยนน้ำหนักตัวอักษร เพิ่ม padding เพิ่ม transition และตั้งค่า display */
+}
+
+.scroll-up a:hover {
+  background-color: var(--Jordy_Blue);
+  transform: scale(1.2);
+  box-shadow: 0px 5px #fff;
+  color: #fff;
+  /* เมื่อมีการ hover เปลี่ยนสีพื้นหลัง ทำให้ขยายใหญ่ เพิ่มเงา เปลี่ยนสีข้อความ */
+}
+
+.scroll_watcher-box {
+  position: relative;
+  /* กำหนด position */
+}
+.scroll_watcher {
+  height: 10px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background-color: var(--Gondola);
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll_watcher linear;
+  animation-timeline: scroll();
+  /* เพิ่มความสูง กำหนด position ทำให้อยู่ล่างสุด ตั้งค่าเลเยอร์ เปลี่ยนสีพื้นหลัง ตั้งค่าความยาว ตั้งค่าการขยาย ทำให้เริ่มจากซ้าย เรียกใช้ animation */
+}
+@keyframes scroll_watcher {
+  to {
+    scale: 1 1;
+  }
+  /* ทำให้ขยายจนเต็ม */
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+  /* เริ่มจาก แกน Y 30 px ไปจนถึง 0 px และตั้งค่า การขยาย 0 ไปจนถึง 1 */
+}

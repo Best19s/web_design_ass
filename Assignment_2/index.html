@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #00614c;
+            color: #fff;
+            padding: 15px;
+        }
+
+        nav ul, li {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav li {
+            padding: 10px 15px 10px 5px;
+        }
+
+        section {
+            background-color: #cbf6ed;
+            margin: 0px 5px 15px 5px;
+            padding: 0px 10px;
+            border: 1px solid black;
+        }
+
+        article {
+            background-color: #fff;
+            display: flex;
+            border: 1px solid black;
+            margin: 0px 0px 15px 0px;
+            padding: 0px 10px;
+        }
+
+        article .canvas {
+            padding-left: 200px;
+        }
+
+        article video, img {
+            padding: 0px 0px 15px 0px;
+        }
+        
+        section h2 {
+            padding: 15px 0px 15px 0px;
+        }
+
+        footer {
+            background-color: #00614c;
+            font-size: 12px;
+            color: #fff;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assignment#2</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu1</li>
+            <li>Menu2</li>
+            <li>Menu3</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>HTML5</h2>
+
+        <article>
+            <div class="vid">
+                <h2>What is html5 (video)</h2>
+                <video src="vid/video_for_ass2.mp4" width="500" controls></video>   
+            </div>
+        </article>
+
+        <article>
+            <div class="img">
+                <h2>Image</h2>
+                <img src="img/image_for_ass2.jpg" alt="Image" width="400">
+            </div>
+            <div class="canvas">
+                <h2>Canvas</h2>
+                <canvas id="canvas" width="120" height="100" style="border: 1px solid black;"></canvas>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>© 2015 WDT. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext('2d');
+
+        ctx.fillStyle = "#008023";
+        ctx.fillRect(0,0,120,100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/Logo-title.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Website Design</h1>
+      <a href="#content1" id="tag1">1. การออกแบบเว็บไซต์ที่ดี</a>
+      <a href="#content2" id="tag2">2. ห้ากระบวนการในการพัฒนาเว็บไซต์</a>
+      <a href="#content3" id="tag3">3.เทคนิคการออกแบบเว็บเพจให้แสดงผลได้เร็ว</a>
+      <img src="img/smart-people.png" alt />
+    </header>
+    <div class="sidebar">
+      <p>Menu</p>
+      <ul>
+        <li><img src="img/icon/Home.svg" alt /><a href>Home</a></li>
+        <li><img src="img/icon/User.svg" alt /><a href>About</a></li>
+        <li>
+          <img src="img/icon/Pin.svg" alt /><a href
+            >Content <img src="img/Caret-down.svg" alt
+          /></a>
+          <ul class="dropdown">
+            <li>1. การออกแบบเว็บไซต์ที่ดี</li>
+            <li>2. กระบวนการในการพัฒนาเว็บไซต์</li>
+            <li>3. เทคนิคการออกแบบเว็บเพจให้แสดงผลได้เร็ว</li>
+            <li>4. รายการอ้างอิง</li>
+          </ul>
+        </li>
+        <li><img src="img/icon/Telegram.svg" alt /><a href="ref.html">Reference</a></li>
+      </ul>
+   </div>
+    <section>
+      <div class="content1" id="content1">
+        <h2>การออกแบบเว็บไซต์ที่ดี</h2>
+        <p>
+          การออกแบบเว็บไซต์ที่ดี คือ
+          การออกแบบให้เหมาะสมกับกลุ่มเป้าหมายและลักษณะของเว็บไซต์
+          โดยคำนึงถึงความสะดวกในการใช้งานของผู้ใช้เป็นหลัก
+          เว็บไซต์ที่ออกแบบอย่างมีประสิทธิภาพ ควรมีความเรียบง่าย มีความสม่ำเสมอ
+          สะท้อนเอกลักษณ์และลักษณะขององค์กรนั้นได้ มีเนื้อหาที่มีประโยชน์ มีระบบ
+          Navigation ที่ใช้งานง่าย มีลักษณะที่น่าสนใจและดึงดูด
+          มีโลโก้และชื่อเว็บไซต์ทุกหน้า
+          เข้าถึงข้อมูลได้โดยไม่ต้องเข้าเมนูที่ซับซ้อน
+          สามารถเข้าถึงข้อมูลให้ได้มากที่สุดโดยไม่ต้องบังคับให้ผู้ใช้ต้องติดตั้งโปรแกรมเ
+          พิ่มเติม หรือเลือกใช้บราวเซอร์ชนิดใดชนิดหนึ่ง
+          สามารถแสดงผลในหน้าจอที่มีความละเอียดต่างๆกันได้ มีคุณภาพในการออกแบบ
+          เลี่ยงลาย background ที่ลายตา เลือกสี background และสี font ให้เหมาะสม
+          ขนาดตัวอักษรพอเหมาะ รองรับเว็บไซต์ที่อาจมีข้อมูลเพิ่มขึ้นเรื่อยๆ
+          ลิงค์ต่างๆเชื่อมโยงไปยังหน้าที่มีอยู่จริง ไม่มี
+          <span>“broken link”</span> ควรใช้เวลาในการดาวน์โหลดน้อย แสดงผลเร็ว
+          และหมั่นปรับปรุงเนื้อหาอย่างสม่ำเสมอ
+        </p>
+      </div>
+      <div class="content2" id="content2">
+        <h2>
+          กระบวนการในการพัฒนาเว็บไซต์ สามารถแบ่งได้เป็น 5 ขั้นตอนที่สำคัญคือ
+        </h2>
+        <div class="tab-wrapper">
+          <div class="tab">
+            <button class="tablinks active" onclick="openTab(event,'box-1')">
+              ขั้นตอนที่ 1
+            </button>
+            <button class="tablinks" onclick="openTab(event,'box-2')">
+              ขั้นตอนที่ 2
+            </button>
+            <button class="tablinks" onclick="openTab(event,'box-3')">
+              ขั้นตอนที่ 3
+            </button>
+            <button class="tablinks" onclick="openTab(event,'box-4')">
+              ขั้นตอนที่ 4
+            </button>
+            <button class="tablinks" onclick="openTab(event,'box-5')">
+              ขั้นตอนที่ 5
+            </button>
+          </div>
+
+          <div id="box-1" class="tabcontent" style="display: block">
+            <h3>ขั้นตอนที่ 1 สำรวจปัจจัยสำคัญ (Research)</h3>
+            <p>
+              เริ่มต้นจากการศึกษาหน่วยงานเจ้าของเว็บไซต์
+              เพื่อกำหนดเป้าหมายของเว็บไซต์ที่ชัดเจน ศึกษาผู้ใช้
+              เพื่อให้สามารถระบุกลุ่มผู้ใช้ และความต้องการของผู้ใช้
+              และศึกษาคู่แข่งเพื่อกำหนดกลยุทธ์ในการแข่งขัน
+            </p>
+          </div>
+
+          <div id="box-2" class="tabcontent">
+            <h3>ขั้นตอนที่ 2 : พัฒนาเนื้อหา (Site Content)</h3>
+            <p>
+              หลังจากการศึกษาข้อมูลเบื้องต้นและกำหนดวัตถุประสงค์ของเว็บไซต์แล้ว
+              จะสามารถกำหนดแนวทางในการออกแบบเว็บไซต์ ขอบเขตเนื้อหาและการใช้งาน
+              เพื่อรวบรวมข้อมูลและเนื้อหาของเว็บไซต์ต่อไป
+            </p>
+          </div>
+
+          <div id="box-3" class="tabcontent">
+            <h3>ขั้นตอนที่ 3 : พัฒนาโครงสร้างเว็บไซต์ (SiteStructure)</h3>
+            <p>
+              ในขั้นตอนนี้ จะนำข้อมูลที่รวบรวมได้มาจัดระบบข้อมูล
+              โดยจัดทำแผนผังโครงสร้างข้อมูล และออกแบบระบบ Navigation
+              เพื่อออกแบบการใช้ข้อมูลและแนวทางการท่องเว็บที่จะพัฒนา
+            </p>
+          </div>
+          <div id="box-4" class="tabcontent">
+            <h3>ขั้นตอนที่ 4 : ออกแบบและพัฒนาหน้าเว็บ (Visual Design)</h3>
+            <p>
+              ในขั้นตอนนี้
+              จะทำการออกแบบลักษณะหน้าตาของเว็บเพจตามหลักการออกแบบเว็บที่ดี
+              มีการจัดแบ่งพื้นที่ในหน้าเว็บเพจ
+              และมีรูปแบบโครงสร้างข้อมูลอยู่ในหน้าเว็บที่ออกแบบนี้ ในขั้นตอนนี้
+              จะได้เว็บเพจต้นแบบที่จะใช้พัฒนาเป็นเว็บไซต์ต่อไป
+            </p>
+          </div>
+          <div id="box-5" class="tabcontent">
+            <h3>ขั้นตอนที่ 5 : พัฒนาและดำเนินการ (Production and Operation)</h3>
+            <p>
+              ในขั้นตอนนี้ จะทำการพัฒนาเว็บเพจที่ออกแบบ เป็นเว็บไซต์ที่สมบูรณ์
+              จนถึงการ upload
+              เว็บไซต์สู่เครื่องแม่ข่ายเพื่อเผยแพร่สู่อินเทอร์เน็ต
+              และกำหนดแนวทางการดูแลเนื้อหาและพัฒนาต่อไป
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content3" id="content3">
+        <h2>เทคนิคการออกแบบเว็บเพจให้แสดงผลได้เร็ว</h2>
+        <ul>
+          <li>
+            ลดขนาดของไฟล์ HTML โดยกำจัดคำสั่ง หรือแท็ก tag ที่ไม่จำเป็นออกไป
+          </li>
+          <li>ใช้ตัวอักษร และลิงค์แบบ html</li>
+          <li>ใช้ graphic ให้ถูกประเภท</li>
+          <li>ตัดแบ่งภาพที่มีขนาดใหญ่ให้เป็นภาพชิ้นเล็กๆ</li>
+          <li>นำกราฟิกกลับมาใช้ใหม่ในหน้าอื่นๆ</li>
+          <li>กำหนดค่า Width และ Height ของกราฟิก</li>
+          <li>กำหนดค่า Alt ของกราฟิก</li>
+          <li>ใช้ style sheet ในการจัดรูปแบบ</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="loader"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="scroll"></div>
+
+    <script>
+      function openTab(evt, tabName) {
+        let i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <script>
+      const cursorDot = document.querySelector(".cursor-dot");
+      const cursorOutline = document.querySelector(".cursor-outline");
+      window.addEventListener("mousemove", function (e) {
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        cursorOutline.style.left = `${posX}px`;
+        cursorOutline.style.top = `${posY}px`;
+
+        cursorOutline.animate(
+          {
+            left: `${posX}px`,
+            top: `${posY}px`,
+          },
+          { duration: 500, fill: "forwards" }
+        );
+      });
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        document.querySelector(".loader").classList.add("loader--hidden");
+
+        document
+          .querySelector(".loader")
+          .addEventListener("transitionend", () => {
+            document.body.removeChild(document.querySelector(".loader"));
+          });
+      });
+    </script>
+  </body>
+</html>
