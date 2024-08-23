@@ -1,0 +1,214 @@
+@font-face {
+   font-family: "NyghtSerif-Bold";
+   src: url(font/NyghtSerif-Bold.otf);
+   font-weight: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: "NyghtSerif-MediumItalic";
+   src: url(font/NyghtSerif-MediumItalic.otf);
+   font-weight: 500;
+   font-style: italic;
+}
+@font-face {
+   font-family: "NyghtSerif-Regular";
+   src: url(font/NyghtSerif-Regular.otf);
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Satoshi-Regular";
+   src: url(font/Satoshi-Regular.ttf);
+}
+* {
+   scroll-behavior: smooth;
+   scroll-padding: 1rem;
+}
+body {
+   margin: 0;
+   background-color: #000;
+}
+nav {
+   position: relative;
+   width: 100%;
+   z-index: 2;
+   text-shadow: 0px 0px 10px #fff;
+   font-family: "NyghtSerif-Regular";
+}
+.dropdown-1 {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   margin-left: 50px;
+   margin-top: 20px;
+   animation: fade-down .75s ease-in-out;
+}
+.dropdown-1 li {
+   display: inline-block;
+   position: relative;
+   color: #fff;
+   margin-left: 20px;
+   padding: 10px;
+   padding-bottom: 5px;
+}
+#history::after, #members::after, #concerts::after, #hide::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #fff;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+}
+#history:hover::after, #members:hover::after, #concerts:hover::after, #hide:hover::after  {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+.dropdown-1 li span {
+   vertical-align: middle;
+   margin-left: 5px;
+   font-size: 20px;
+}
+.dropdown-1 a {
+   color: #fff;
+   text-decoration: none;
+}
+.dropdown-2 {
+   background-color: #fff;
+   display: none;
+   position: absolute;
+   padding: 0;
+   top: 30px;
+   width: 150px;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.dropdown-2 li {
+   display: flex;
+   margin: 0;
+}
+.dropdown-2 a {
+   color: #000 !important;
+}
+
+.dropdown-1 li:hover .dropdown-2 {
+   display: block;
+}
+.dropdown-2 li:hover {
+   background-color: #d2d8eb;
+}
+
+.dropdown-3 {
+   background-color: #fff;
+   display: none;
+   position: absolute;
+   padding: 0;
+   width: 250px;
+   left: 152px;
+   top: 0;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.dropdown-2 li:hover .dropdown-3 {
+   display: block;
+
+}
+.dropdown-2 li span {
+   vertical-align: middle;
+   font-size: 20px;
+}
+.dropdown-4 {
+   background-color: #fff;
+   display: none;
+   position: absolute;
+   width: 250px;
+   left: 152px;
+   padding: 0;
+   top: 0;
+   z-index: 2;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.dropdown-4 li {
+   color: #000;
+}
+.dropdown-2 li:hover .dropdown-4 {
+   display: block;
+}
+.wrapper-member {
+   display: flex;
+   overflow: scroll;
+}
+
+.wrapper-member img{
+   width: 500px;
+}
+
+#member {
+   background-color: #000;
+   color: #fff;
+}
+
+.slide {
+   overflow: hidden;
+   background-color: #fff;
+   color: #000;
+   margin-top: 20px;
+}
+
+.slide h2{
+   font-size: 3em;
+   margin: 10px 0 10px 75px;
+   display: inline-block;
+}
+.slide-text {
+   font-family: "NyghtSerif-MediumItalic";
+   white-space: nowrap;
+   animation: slide 6s infinite linear;
+}
+@keyframes slide {
+   from {
+      transform: translateX(0);
+   }
+   to {
+      transform: translateX(-90%);
+   }
+}
+.name-members {
+   font-family: "NyghtSerif-MediumItalic";
+   font-size: 8em;
+   cursor: alias;
+}
+.name-members li:nth-child(1):hover {
+   color: #f4028e;
+}
+.name-members li:nth-child(2) {
+   margin-left: 150px;
+}
+.name-members li:nth-child(2):hover {
+   color: #01954a;
+}
+.name-members li:nth-child(3) {
+   margin-left: 350px;
+}
+.name-members li:nth-child(3):hover {
+   color: #eb1326;
+}
+.name-members li:nth-child(4) {
+   margin-left: 500px;
+}
+.name-members li:nth-child(4):hover {
+   color: #1313d6;
+}
+.name-members li:nth-child(5) {
+   margin-left: 750px;
+}
+.name-members li:nth-child(5):hover {
+   color: #7632a0;
+}
+.name-members ol {
+   margin: 0;
+   margin-top: 100px;
+   margin-left: 150px;
+}

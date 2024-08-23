@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ARTMS</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+   <link rel="icon" href="img/Logo-title.png">
+
+<body>
+   <nav>
+      <ul class="dropdown-1">
+         <li id="history"><a href="index.html#history">History</a></li>
+         <li>
+            Albums<span class="material-symbols-outlined">
+               keyboard_arrow_down
+            </span>
+            <ul class="dropdown-2">
+
+               <li><a href="ablums.html#studio">Studio albums <span class="material-symbols-outlined">
+                        keyboard_arrow_right
+                     </span>
+                  </a>
+                  <ul class="dropdown-3">
+                     <li><a href="ablums.html">Dall (2024)</a></li>
+                  </ul>
+               </li>
+
+               <li><a href="ablums.html#digital">Digital singles <span class="material-symbols-outlined">
+                        keyboard_arrow_right
+                     </span></a>
+                  <ul class="dropdown-4">
+                     <li><a href="ablums.html#the_carol_3_0">The Carol 3.0 (2023)</a></li>
+                     <li><a href="ablums.html#birth">Pre1 : Birth (2024)</a></li>
+                     <li><a href="ablums.html#flower_rhythms">Pre2 : Flower Rhythm (2024)</a></li>
+                     <li><a href="ablums.html#candy_crush">Pre3 : Candy Crush (2024)</a></li>
+                     <li><a href="ablums.html#air">Pre4 : Air (2024)</a></li>
+                  </ul>
+               </li>
+
+            </ul>
+         </li>
+         <li id="members"><a href="members.html">Members</a></li>
+         <li id="concerts"><a href="concerts.html">Concerts</a></li>
+      </ul>
+      <button id="hide" onclick="hide()">Hide all</button>
+
+   </nav>
+   <header>
+      <div class="head" id="head">
+         <h1>ARTMS</h1>
+         <div id="info">
+            <h2>Modhaus</h2>
+            <hr>
+            <p>ARTMS (Hangul: 아르테미스; areutemiseu, pronounced in English as “Artemis”), also known as Artemis Strategy
+               (Hangul: 아르테미스 스트래티지; areutemiseu seuteuraetiji), is a South Korean girl group</p>
+         </div>
+         <button id="myBtn" onclick="myFunction()">Play</button>
+      </div>
+      <video loop id="vid-header">
+         <source src="vid/ARTMS_Virtual_Angel.mp4" type="video/mp4">
+      </video>
+   </header>
+   <section id="sec-history">
+      <h2>History of the group</h2>
+      <p>ARTMS (Hangul: 아르테미스; areutemiseu, pronounced in English as “Artemis”), also known as Artemis Strategy (Hangul:
+         아르테미스 스트래티지; areutemiseu seuteuraetiji), is a South Korean girl group[1] formed by MODHAUS.
+
+         While intended to be a project group and placeholder to house as many members of LOONA as possible once they
+         made their departure from BlockBerryCreative, its final lineup is composed of 5 members: HeeJin, HaSeul, Kim
+         Lip, JinSoul, and Choerry.
+
+         They debuted May 31, 2024, with the studio album Dall featuring title track “Virtual Angel”.
+
+      </p>
+      <p>On March 17, 2023, HeeJin, Kim Lip, JinSoul, and Choerry were announced to have signed exclusive contracts with
+         MODHAUS.[4]
+
+         On March 28, MODHAUS filed a trademark request for 오드아이써클 (ODD EYE CIRCLE), and an additional request for “ODD
+         EYE CIRCLE” (in English) on April 3, 2023.
+
+         MODHAUS CEO Jaden Jeong said that since he left BlockBerryCreative in 2019, he and the LOONA members had kept
+         in contact and had a meal together about once a year. Initially, the members came to Jeong for advice in
+         picking a management company, but eventually decided to join MODHAUS. Jeong rejected speculation that members
+         would join tripleS, instead referring to them as “sister groups” with possible cross-group collaborations in
+         the future.[3]
+
+         Jeong stated that the ARTMS members are currently creating new music, and he is “working closely” JinSoul to
+         develop her A&R skills. Jeong also stated that he is “open” to revising the scrapped music of La Maison, with a
+         “plan on releasing it at the right time”.[3]
+
+         On June 20, HaSeul was announced to have signed an exclusive contract with MODHAUS, making her the fifth and
+         final member from LOONA to join ARTMS.[5]</p>
+      <div class="name">
+         <h2>Name</h2>
+         <p>The name ARTMS is derived from “Artemis”, the Greek goddess associated with the Moon. As such, it also
+            shares connections with other things named after the goddess, including the Moon exploration program led by
+            United States’ National Aeronautics and Space Administration (NASA).
+
+            Their Korean name “아르테미스” is officially shortened to “아르르” (ARR)</p>
+      </div>
+      <div class="concept">
+         <h2>Concept</h2>
+         <p>
+            The group plans to “continue the identity of LOONA,”[3] following a similar moon–based name of ARTMS. The
+            first project teaser shows twelve moons representing their original intention of reuniting LOONA as a whole,
+            with four full moons representing HeeJin, Kim Lip, JinSoul, and Choerry. The catchphrase of ARTMS is “We
+            rise together, back to the moon and beyond.”
+         </p>
+      </div>
+   </section>
+
+   <script>
+      var video = document.getElementById("vid-header");
+      var btn = document.getElementById("myBtn");
+      function myFunction() {
+         if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+         } else {
+            video.pause();
+            btn.innerHTML = "Play";
+         }
+      }
+   </script>
+
+   <script>
+      var text = document.getElementById("head");
+      var btnHide = document.getElementById("hide")
+      function hide() {
+         if (text.style.display === "none") {
+            text.style.display = "block";
+            btnHide.textContent = "Hide all";
+         } else {
+            text.style.display = "none";
+            btnHide.textContent = "Show all";
+         }
+      }
+   </script>
+</body>
+
+</html>
