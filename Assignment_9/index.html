@@ -1,111 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Title</title>
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta
-         name="viewport"
-         content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
 
-      <!-- Bootstrap CSS v5.2.1 -->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-         crossorigin="anonymous"
-      />
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-   </head>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous">
+   </script>
+</head>
 
-   <body>
-      <header>
-         <!-- place navbar here -->
-          <!-- Nav tabs -->
-          <ul
-            class="nav nav-tabs d-flex justify-content-end"
-            id="navId"
-            role="tablist"
-          >
-            <li class="nav-item">
-               <a
-                  href="#tab1Id"
-                  class="nav-link active"
-                  data-bs-toggle="tab"
-                  aria-current="page"
-                  >หน้าหลัก</a
-               >
-            </li>
-            <li class="nav-item dropdown">
-               <a
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >รายการ</a
-               >
-               <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#tab2Id">Action</a>
-                  <a class="dropdown-item" href="#tab3Id">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#tab4Id">Action</a>
-               </div>
-            </li>
-            <li class="nav-item" role="presentation">
-               <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
-                  >อ้างอิง</a
-               >
-            </li>
-          </ul>
+<body>
 
-          <!-- Tab panes -->
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+   <nav class="navbar  navbar-expand-lg navbar-expand-md  navbar-light bg-light justify-content-between p-3">
+      <div class="container">
+         <a href="#" class="navbar-brand text-dark ">
+            <i class="bi bi-flag-fill"></i>
+            Travel
+         </a>
 
-            </div>
-            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-          </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
 
-          <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-          <script>
-            var triggerEl = document.querySelector("#navId a");
-            bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-          </script>
-
-      </header>
-      <main>
-         <div class="container mt-5">
-            <div
-               class="row justify-content-center align-items-center g-2 text-center"
-            >
-               <div class="col-lg-4 col-sm-3 text-bg-primary p-5">Column</div>
-               <div class="col-lg-4 col-sm-3 text-bg-primary p-5">Column</div>
-               <div class="col-lg-4 col-sm-3 text-bg-primary p-5">Column</div>
-            </div>
-
+         <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+            <ul class="navbar-nav">
+               <li class="nav-item mr-4  active">
+                  <a class="nav-link" href="">
+                     <i class="bi bi-house-fill"></i>
+                     หน้าหลัก
+                  </a>
+               </li>
+               <li class="nav-item mr-4">
+                  <a class="nav-link" href="">
+                     <i class="bi bi-airplane-fill"></i>
+                     ท่องเที่ยว
+                  </a>
+               </li>
+               <li class="nav-item mr-5">
+                  <a class="nav-link" href="">
+                     <i class="bi bi-calendar2-fill"></i>
+                     บล็อก
+                  </a>
+               </li>
+               <li class="nav-item mr-4">
+                  <a class="nav-link" href="">
+                     เข้าสู่ระบบ
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="" id="reg_btn">
+                     <i class="bi bi-door-open-fill"></i>
+                     ลงทะเบียน
+                  </a>
+               </li>
+            </ul>
          </div>
-      </main>
-      <footer>
+      </div>
+   </nav>
 
-      </footer>
-      <!-- Bootstrap JavaScript Libraries -->
-      <script
-         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-         crossorigin="anonymous"
-      ></script>
+   <div class="container mt-5 mb-5 ">
+      <h1>Travel With Me!</h1>
+      <p>บล็อกใหม่ประจำเดือน สิงหาคม 2024</p>
+      <div class="row">
+         <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="card mt-5">
+               <img src="img/content_1/img_card_1.jpg" class="card-img-top img-fluid" alt="..." style="min-width: 300px;">
+               <div class="card-body">
+                  <h5 class="card-title">6 Unseen แลนมาร์คในเมืองเก่าริมน้ำ จ.เพชรบุรี </h5>
+                  <p class="card-text">เที่ยว กิน เล่น ครบ ใครจะไปรู้ว่าจุดเช็คอินสุดว๊าวว จะซ่อนอยู่ในชุมชนแบบนี้</p>
+                  <a href="content/content_1.html" class="btn">อ่านเพิ่มเติม</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="card mt-5">
+               <img src="img/content_2/img_card_2.jpg" class="card-img-top img-fluid" alt="..." style="min-width: 300px;">
+               <div class="card-body">
+                  <h5 class="card-title">Angkor Wat: นครวัด ที่ทั้งเหมือน และไม่เหมือนกับที่คิด</h5>
+                  <p class="card-text">เรายืนรอกันอยู่นาน จนท้องฟ้าเริ่มเป็นสีชมพู ตามมาด้วยสี…</p>
+                  <a href="content/content_2.html" class="btn">อ่านเพิ่มเติม</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="card mt-5">
+               <img src="img/content_3/img_card_3.webp" class="card-img-top img-fluid" alt="..." style="min-width: 300px;">
+               <div class="card-body">
+                  <h5 class="card-title">เช็คอิน 10 ที่เที่ยวทะเลหมอกหนาวนี้ชวนแฟนไปกอดกัน</h5>
+                  <p class="card-text">ลมหนาวมาเมื่อไร ใจฉันมันสุดเหงา หนาวนี้รีบหาคู่แล้วพากันขึ้นภูไปดูทะเลหมอกกันค่ะ
+                  </p>
+                  <a href="#" class="btn">อ่านเพิ่มเติม</a>
+               </div>
+            </div>
+         </div>
+      </div>
 
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-         crossorigin="anonymous"
-      ></script>
-   </body>
+   </div>
+
+
+
+
+   <!-- <div class="p-3 mb-5 bg-dark text-white">
+      Logo
+   </div> -->
+   <!-- <div class="container">
+   </div> -->
+   <!-- <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div> -->
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>

@@ -1,3 +1,81 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
-   font-family: "Noto Sans Thai" !important;
+  font-family: "Noto Sans Thai" !important;
+  min-width: 320px;
+  min-height: 150px;
+}
+
+.container h1 {
+  font-weight: bold;
+  color: #f5cd25;
+}
+
+.nav-link {
+  transition: all 0.2s;
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #f5cd25 !important;
+  font-weight: bold;
+}
+
+#reg_btn {
+  /* color: aqua; */
+  transition: 0.2s;
+  padding: 8px 5px;
+  border-radius: 8px;
+}
+#reg_btn:hover {
+  background-color: #f5cd25 !important;
+  color: #fff !important;
+  font-weight: bold;
+  /* border: 2px solid #000; */
+}
+
+.card-body a {
+  background-color: #f5cd25;
+  color: #fff;
+  transition: all 0.2s;
+}
+.card-body a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.scroll-up {
+  padding: 10px;
+  background-color: #f5cd25;
+}
+
+.breadcrumb li a {
+  color: #f5cd25;
+}
+
+.btn {
+  background: #f5cd25;
+  color: #fff;
+}
+
+
+@media (max-width: 766px) {
+
+   .navbar-nav {
+      display: flex;
+      flex-direction: column;
+   }
+   #reg_btn {
+      padding: 8px 5px;
+      background-color: #f5cd25;
+   }
+
+   .nav-item:nth-child(1) {
+      margin-top: 10px;
+   }
+   .nav-item:nth-child(4){
+      margin-top: 10px;
+   }
 }
