@@ -21,28 +21,22 @@ nav {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   background-color: #94cafb;
+   background-color: #4a83c4;
    margin-bottom: 3rem;
 }
 
-.menu, .menu-col {
+.menu, .menu-col, .bread_crump_menu {
    padding: 0;
    list-style-type: none;
 }
 
-.bread_crump {
-   /* margin-left: 13%; */
-   overflow: hidden;
-}
-.bread_crump_menu {
-   list-style-type: none;
-   padding: 0;
-   /* margin: 0 0 3rem 0; */
 
-}
 .bread_crump_menu li {
    display: inline;
-
+}
+.bread_crump-link {
+   text-decoration: none;
+   color: #2256a8;
 }
 .bread_crump_menu li+li::before {
    padding: 8px;
@@ -69,9 +63,7 @@ nav {
    color: #fff;
 }
 
-/* .nav-link:hover {
-   background-color: aliceblue;
-} */
+
 .hamburger {
    display: none;
    color: #fff;
@@ -93,7 +85,7 @@ nav {
    font-size: 2.5rem;
 }
 .col h4 {
-   color: #50bef7;
+   color: #2256a8;
    font-size: 1.2rem;
 }
 .col ul a {
@@ -112,9 +104,9 @@ nav {
  .scroll_watcher {
    height: 10px;
    position: fixed;
-   top: 3.8rem;
+   top: 4.4rem;
    z-index: 1000;
-   background-color: #0387d0;
+   background-color: #031148;
    width: 100%;
    scale: 0 1;
    transform-origin: left;
@@ -131,21 +123,33 @@ nav {
 
  footer {
    color: #fff;
-   background-color: #94cafb;
+   background-color: #4a83c4;
    padding: 1rem 0;
+   margin-top: 5rem;
  }
 
+ .col-head {
+   margin-bottom: 3rem;
+}
  .col-head, .col-center {
    text-align: center;
  }
 
+
  .menu-col li a{
    color: #fff;
+   font-size: 1.2rem;
  }
 
  .row-flex {
    display: flex;
-   justify-content: space-between;
+   gap: 10%;
+   justify-content: center;
+   margin-bottom: 4rem;
+ }
+
+ .accordion_footer {
+   display: none;
  }
 
 
@@ -165,17 +169,16 @@ nav {
       padding: 1rem 2rem;
       list-style-type: disc;
       border: 2px solid #000;
-      background-color: #94cafb;
+      background-color: #4a83c4;
     }
     .accordion-link {
       padding: 0;
       list-style-type: none;
       border: 2px solid #000;
-      background-color: #94cafb;
     }
    .accordion li, .accordion-link li {
       color: #fff;
-      background-color: #94cafb;
+      background-color: #4a83c4;
    }
    .accordion-link li a {
       color: #fff;
@@ -242,16 +245,15 @@ nav {
       padding: 1rem 2rem;
       list-style-type: disc;
       border: 2px solid #000;
-      background-color: #94cafb;
+      background-color: #4a83c4;
     }
     .accordion-link {
       list-style-type: none;
       border: 2px solid #000;
-      background-color: #94cafb;
     }
    .accordion li, .accordion-link li {
       color: #fff;
-      background-color: #94cafb;
+      background-color: #4a83c4;
    }
    .accordion-link li a {
       color: #fff;
@@ -272,6 +274,7 @@ nav {
       flex-direction: column;
       text-align: center;
    }
+
    .menu-col li{
       text-align: start;
       background-color: #fff;
