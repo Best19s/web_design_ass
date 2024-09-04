@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "FCVision";
+  src: url(font/FCVision[Non-commercial]-Light.otf);
+}
+@font-face {
+  font-family: "FCVision-B";
+  src: url(font/FCVision[Non-commercial]-Bold.otf);
+}
+
+body {
+  font-family: "FCVision";
+  padding: 0;
+  margin: 0;
+  min-width: 350px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3374ea;
+  margin-bottom: 3rem;
+}
+
+.menu,
+.menu-col,
+.bread_crump_menu {
+  padding: 0;
+  list-style-type: none;
+}
+.menu-col li a{
+   transition: .25s ease-in;
+}
+.menu-col li a:hover {
+   font-weight: bolder;
+}
+.bread_crump_menu li {
+  display: inline;
+}
+.bread_crump-link {
+  text-decoration: none;
+  color: #3374ea;
+}
+.bread_crump_menu li + li::before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+.menu li {
+  display: inline;
+  margin-left: 2rem;
+}
+.menu li:first-child {
+  margin-left: 0;
+}
+.menu li a {
+   padding: .4rem;
+}
+.menu li a:hover {
+   font-weight: bold;
+  background-color: #fff;
+  color: #3374ea;
+}
+.nav-link {
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: 0.25s ease-in;
+}
+.nav-brand {
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  color: #fff;
+}
+.hamburger span {
+  vertical-align: middle;
+}
+
+.container {
+  margin: 0 13%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+.col h1 {
+  font-family: "FCVision-B";
+  font-size: 2.5rem;
+}
+.col h4,.col-2 h4 {
+  color: #3374ea;
+  font-size: 1.4rem;
+}
+
+.col a {
+   color: #3374ea;
+}
+
+
+.accordion-link {
+   padding: 0;
+}
+.accordion-link li{
+   width: 100%;
+   list-style-type: none;
+}
+.accordion-link li a {
+   color: #fff;
+   display: block;
+   padding: .7rem;
+   margin-top: .5rem;
+   transition: .40s ease-in;
+   text-decoration: none;
+   background-color: #3374ea;
+}
+
+.accordion-link li a:hover {
+   color: #3374ea;
+   border: 2px solid #3374ea;
+   background-color: #fff;
+}
+
+.accordion-link li a span {
+   font-size: 1rem;
+   margin-right: .2rem;
+}
+
+.scroll_watcher-box {
+  position: relative;
+}
+.scroll_watcher {
+  height: 10px;
+  position: fixed;
+  top: 4.45rem;
+  z-index: 1000;
+  background-color: #1002c5;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll_watcher linear;
+  animation-timeline: scroll();
+}
+@keyframes scroll_watcher {
+  to {
+    scale: 1 1;
+  }
+}
+
+.box1 {
+   float: left;
+   width: 60%;
+}
+.box2 {
+   margin-left: 65%;
+   margin-top: 5%;
+}
+
+
+footer {
+  color: #fff;
+  background-color: #3374ea;
+  padding: 1rem 0;
+  margin-top: 5rem;
+}
+
+.col-head {
+  margin-bottom: 3rem;
+}
+.col-head,
+.col-center {
+  text-align: center;
+}
+.col-center {
+   font-size: smaller;
+}
+.menu-col li a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.row-flex {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.accordion_footer {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-brand h2 {
+    margin: 0.3rem;
+  }
+  .bread_crump {
+    display: none;
+  }
+
+  .accordion {
+    padding: 1rem 2rem;
+    list-style-type: disc;
+    border: 2px solid #000;
+    background-color: #3374ea;
+  }
+  .accordion-link {
+    padding: 0;
+    list-style-type: none;
+  }
+  .accordion li,
+  .accordion-link li {
+    color: #fff;
+    background-color: #3374ea;
+  }
+  .accordion-link li a {
+    color: #fff;
+    display: block;
+    padding: 0.8rem;
+  }
+  .accordion-link li a span {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: sub;
+    margin-right: 0.2rem;
+  }
+  .accordion-link a {
+   border: 2px solid #000;
+  }
+  .box1 {
+   width: 100%;
+  }
+  .box2 {
+   clear: both;
+   margin: 0;
+  }
+  .row-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-col li {
+    text-align: start;
+    background-color: #fff;
+    border: 2px solid black;
+    margin-bottom: 0.5rem;
+  }
+  .menu-col li a {
+    color: #000;
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .scroll_watcher {
+    top: 5.8rem;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  .nav-brand {
+    font-size: smaller;
+  }
+  .nav-brand h2 {
+    margin: 1rem;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .col h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .accordion {
+    padding: 1rem 2rem;
+    list-style-type: disc;
+    border: 2px solid #000;
+    background-color: #3374ea;
+  }
+  .accordion-link {
+    list-style-type: none;
+  }
+  .accordion li,
+  .accordion-link li {
+    color: #fff;
+    background-color: #3374ea;
+  }
+  .accordion-link li a {
+    color: #fff;
+    display: block;
+    padding: 0.8rem;
+  }
+  .accordion-link a {
+   border: 2px solid #000;
+  }
+  .box1 {
+   width: 100%;
+  }
+  .box2 {
+   clear: both;
+   margin: 0;
+  }
+  .accordion-link li a span {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: sub;
+    margin-right: 0.2rem;
+  }
+  .container {
+    margin: 0 5%;
+  }
+
+  .row-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-col li {
+    text-align: start;
+    background-color: #fff;
+    border: 2px solid black;
+    margin-bottom: 0.5rem;
+  }
+  .menu-col li a {
+    color: #000;
+    padding: 0.5rem;
+  }
+  .scroll_watcher {
+    top: 3.6rem;
+  }
+}
